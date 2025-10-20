@@ -1,0 +1,27 @@
+# RealisticHighlands2 Configuration
+#
+# Adjust these values to fine-tune your world generation.
+# Experiment with different settings to achieve desired results.
+
+generator:
+  # Seed for world generation. Set to 0 for a random seed (will be saved in config).
+  # Changing an existing seed will drastically alter the world.
+  seed: 0
+
+  # Overall scale factor for biome distribution. Higher values mean larger, coarser biomes.
+  biomeScale: 1.0
+
+  # Multiplier for overall terrain height. Higher values create taller mountains and deeper valleys.
+  heightScale: 200.0
+
+  # Frequency of mountain noise. Lower values create larger, more spread-out mountains.
+  mountainFrequency: 0.005
+
+  # Frequency of river/valley noise. Lower values create wider, longer rivers.
+  riverFrequency: 0.01
+
+  # The Y-level at which sea water will naturally form.
+  seaLevel: 63
+
+  # A dummy value to test if config reload works. Change it and use /highlandsreload to test.
+  reload_test_value: false
