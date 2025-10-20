@@ -1,0 +1,34 @@
+name: RealisticHighlands2
+version: 1.0.0
+main: com.realistic_highlands.RealisticHighlands2
+api-version: 1.21
+authors: [PluginGenerator]
+description: Tworzy piękne, realistyczne krajobrazy z ogromnymi górami, głębokimi dolinami, rzekami i naturalnymi jeziorami.
+
+commands:
+  highlandsreload:
+    description: Przeładowuje konfigurację RealisticHighlands2.
+    usage: /highlandsreload
+    permission: realistichighlands.reload
+    permission-message: You do not have permission to use this command.
+  highlandsinfo:
+    description: Wyświetla informacje o włączonym generatorze świata RealisticHighlands2.
+    usage: /highlandsinfo
+    permission: realistichighlands.info
+    permission-message: You do not have permission to use this command.
+  highlandsgenerate:
+    description: Generuje chunk w świecie RealisticHighlands2 (tylko testowo!).
+    usage: /highlandsgenerate <x> <z>
+    permission: realistichighlands.generate
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  realistichighlands.reload:
+    description: Allows reloading the RealisticHighlands2 configuration.
+    default: op
+  realistichighlands.info:
+    description: Allows viewing RealisticHighlands2 plugin information.
+    default: true
+  realistichighlands.generate:
+    description: Allows forcing chunk generation in RealisticHighlands2 worlds.
+    default: op
